@@ -50,7 +50,7 @@ class Song
 
   def new_from_filename(name)
     rows = name.split("-")
-    puts rows
+    puts "#{rows}"
   end
 end
 
