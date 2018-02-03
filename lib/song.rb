@@ -66,7 +66,7 @@ class Song
   end
 
   def self.destroy_all
-    @@all.clear!
+    @@all = @@all.clear
 end
 
 #   csv_data = "Elon Musk, 45, Tesla
