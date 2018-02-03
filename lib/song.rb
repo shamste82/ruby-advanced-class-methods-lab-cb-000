@@ -51,10 +51,10 @@ class Song
   def self.new_from_filename(name)
     rows = name.split("-")
     artist = rows[0]
-    song = rows[1].split(".")
-    song = song[0]
-
-    puts "#{artist}, #{song}"
+    song_name = rows[1].split(".")
+    song_name = song[0]
+    song.name = song
+    song.artist_name = artist
   end
 end
 
