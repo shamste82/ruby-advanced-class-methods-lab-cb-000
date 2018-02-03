@@ -49,7 +49,7 @@ class Song
   end
 
   def self.new_from_filename(name)
-    rows = name.split("-")
+    rows = name.split("-").split(".")
     puts "#{rows}"
   end
 end
