@@ -58,11 +58,12 @@ class Song
     song.artist_name = artist
     song
   end
-end
 
-def self.create_from_filename(name)
-  song = self.new_from_filename(name)
-  @all << song
+
+  def self.create_from_filename(name)
+    song = self.new_from_filename(name)
+    @all << song
+  end
 end
 
 #   csv_data = "Elon Musk, 45, Tesla
