@@ -52,8 +52,8 @@ class Song
     rows = name.split("-")
     artist = rows[0]
     song = rows[1].split(".")
-    song = rows[0]
-    
+    song = song[0]
+
     puts "#{artist}, #{song}"
   end
 end
