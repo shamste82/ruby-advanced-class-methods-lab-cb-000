@@ -48,7 +48,7 @@ class Song
     @@all.sort_by! { |x| x.name.downcase }
   end
 
-  def new_from_filename(name)
+  def self.new_from_filename(name)
     rows = name.split("-")
     puts "#{rows}"
   end
