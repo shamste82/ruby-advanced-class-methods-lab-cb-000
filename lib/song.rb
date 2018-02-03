@@ -53,7 +53,7 @@ class Song
     artist = rows[0]
     song_name = rows[1].split(".")
     song_name = song[0]
-    song.name = song
+    song.name = song_name
     song.artist_name = artist
   end
 end
