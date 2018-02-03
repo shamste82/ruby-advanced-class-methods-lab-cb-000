@@ -64,6 +64,9 @@ class Song
     song = self.new_from_filename(name)
     @@all << song
   end
+
+  def self.destroy_all
+    @@all.clear!
 end
 
 #   csv_data = "Elon Musk, 45, Tesla
