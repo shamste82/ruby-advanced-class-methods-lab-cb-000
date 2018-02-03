@@ -60,6 +60,11 @@ class Song
   end
 end
 
+def self.create_from_filename(name)
+  song = self.new_from_filename(name)
+  @all << song
+end
+
 #   csv_data = "Elon Musk, 45, Tesla
 # Mark Zuckerberg, 32, Facebook
 # Martha Stewart, 74, MSL
